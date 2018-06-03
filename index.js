@@ -66,8 +66,20 @@ const urlMaker = s => {
 //Given a string, write a function to check if it is a permutation of a palindrome
 //Palindromes are words or phrases that are the same backwards and forwards
 //Permutations are rearrangements of letters
+//Since palindromes are the same forwards and backwards, ex. nurses run, there must be two of each character except for the middle one which //will only have one in an odd length string and there will be two of everything in an even length string
 
-const palPerm = () => {
+const palPerm = (s) => {    
+   let noSpaces = (s.replace(/\s/g, ''));
+   let count = {};
+
+   for(let i = 0; i < noSpaces.length; i ++){
+       count[noSpaces[i]] = count[noSpaces[i]] || 0;
+   }
+    console.log(count);
+    
+
+    
+    
 
 }
 
