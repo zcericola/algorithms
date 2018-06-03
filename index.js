@@ -15,4 +15,16 @@ return true;
 //isUnique('abcdefg') returns true
 //isUnique('abccdefg') returns false
 
+//Problem 2 
+//Given two strings, write a method to decide if one is a permutation of the other.
 
+const isPerm = (s1, s2) => {
+    if(s1.length !== s2.length){
+        return false;
+    }
+
+    
+
+
+
+}
