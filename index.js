@@ -83,4 +83,35 @@ const palPerm = (s) => {
 
 }
 
-console.log(palPerm('Tact Coa'));
+// console.log(palPerm('Tact Coa'));
+
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+//Problem 5 -> Factorials 
+//Take a number into a function and return the factorial for that number
+
+//Basic Solution
+const factorial = (n) => {
+  let answer = 1;
+  for(let i = 2; i <= n; i++){
+    answer *= i;
+  }
+  return answer;
+
+}
+
+//console.log(factorial(5));
+
+//Recursive Solution
+//the function calls itself against n like so 5 * 4 * 3 * 2 * 1 and then exits with a total of 120.
+const recurFact = (n) => {
+  //base case
+  if(n === 0) return 1;
+  //otherwise, if n is not 0:
+  return n * recurFact(n-1);  
+}
+
+console.log(recurFact(5));
+
+
