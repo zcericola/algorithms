@@ -105,6 +105,7 @@ const factorial = (n) => {
 
 //Recursive Solution
 //the function calls itself against n like so 5 * 4 * 3 * 2 * 1 and then exits with a total of 120.
+//The Big O time complexity would be linear because the function calls itself in relation to the size of the input.
 const recurFact = (n) => {
   //base case
   if(n === 0) return 1;
@@ -112,6 +113,18 @@ const recurFact = (n) => {
   return n * recurFact(n-1);  
 }
 
-console.log(recurFact(5));
+// console.log(recurFact(5));
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+//Problem 6 --> Disemvowel Trolls
+//Take in a string and remove all of the vowels from the string, return whatever is left
+function removeVowels(str){
+  //regex checks for a,e,i,o,u and then if it finds them, replaces with ''
+  return str.replace(/[aeiou]/gi, '');
+
+}
+
+// console.log(removeVowels('I love to play with puppies and kittens.'));
 
 
